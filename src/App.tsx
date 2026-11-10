@@ -16,25 +16,25 @@ export const App: React.FC = () => {
   const isNetwork = activeRole === 'network';
 
   return (
-    <div className={`min-h-screen bg-[#05070e] text-slate-100 relative selection:bg-cyan-500/30 selection:text-cyan-200 transition-colors duration-500`}>
+    <div className="min-h-screen bg-[#05070e] text-slate-100 relative selection:bg-cyan-500/30 selection:text-cyan-200">
       
       {/* Background Liquid Glass Ambient Mesh */}
       <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
         {/* Dynamic primary orb */}
         <div 
-          className={`absolute -top-40 left-1/4 w-[600px] h-[600px] rounded-full blur-[160px] opacity-25 transition-all duration-700 ease-in-out ${
+          className={`absolute -top-32 left-1/4 w-[420px] h-[420px] rounded-full blur-[110px] opacity-20 transition-colors duration-500 ease-in-out ${
             isNetwork ? 'bg-cyan-500' : 'bg-emerald-500'
           }`} 
         />
         {/* Secondary orb */}
         <div 
-          className={`absolute top-1/3 -right-32 w-[550px] h-[550px] rounded-full blur-[170px] opacity-20 transition-all duration-700 ease-in-out ${
+          className={`absolute top-1/3 -right-24 w-[380px] h-[380px] rounded-full blur-[115px] opacity-15 transition-colors duration-500 ease-in-out ${
             isNetwork ? 'bg-blue-600' : 'bg-indigo-600'
           }`} 
         />
         {/* Lower orb */}
         <div 
-          className={`absolute bottom-1/4 -left-32 w-[500px] h-[500px] rounded-full blur-[150px] opacity-15 transition-all duration-700 ease-in-out ${
+          className={`absolute bottom-1/4 -left-24 w-[340px] h-[340px] rounded-full blur-[100px] opacity-10 transition-colors duration-500 ease-in-out ${
             isNetwork ? 'bg-cyan-600' : 'bg-emerald-600'
           }`} 
         />
